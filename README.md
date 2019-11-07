@@ -2,7 +2,7 @@
 Collection of misc C++ header only helper classes
 
 ## H2 PathString.h 
-.. Class for handling file paths
+..Class for handling file paths
 
         ..* PathString( <file path> )
 	..* SamePath(const PathString& otherpath)
@@ -24,9 +24,9 @@ Collection of misc C++ header only helper classes
 	..* static ReplaceIllegalPathCharacters
 
 ## H2 AutoHandle.h 
-.. RAII Class for Windows HANDLE
+..RAII Class for Windows HANDLE
 
 ## H2 BoostPrio.h 
-.. Class for tempoary boost thread priority, and when it destructs it will return thread prio to previous state
+..Class for tempoary boost thread priority, and when it destructs it will return thread prio to previous state
 
 
