@@ -19,9 +19,9 @@ Class for handling file paths
                 static PathIsDirectoryEmptEx2(..)
                 static PathIsQuouted(...)
                 static StripQuotes(...)	
-                static RelativeToAbsolutePath
-                static RemoveIllegalPathCharacters
-                static ReplaceIllegalPathCharacters
+                static RelativeToAbsolutePath(...)
+                static RemoveIllegalPathCharacters(...)
+                static ReplaceIllegalPathCharacters(...)
 
 # AutoHandle.h 
 RAII Class for Windows HANDLE
