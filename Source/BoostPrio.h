@@ -1,5 +1,5 @@
 /*
-  Post the process priory until this class destructs. then reset prio to previous state.
+  Boosts the thread prio until this class destructs. Then reset prio to previous state.
 
 */
 
