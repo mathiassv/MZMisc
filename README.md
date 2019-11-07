@@ -1,7 +1,7 @@
 # MZMisc
 Collection of misc C++ header only helper classes
 
-## H2 PathString.h 
+## PathString.h 
 Class for handling file paths
 
         PathString( <file path> )
@@ -23,10 +23,10 @@ Class for handling file paths
         static RemoveIllegalPathCharacters
         static ReplaceIllegalPathCharacters
 
-## H2 AutoHandle.h 
+# AutoHandle.h 
 RAII Class for Windows HANDLE
 
-## H2 BoostPrio.h 
+# BoostPrio.h 
 Class for tempoary boost thread priority, and when it destructs it will return thread prio to previous state
 
 
