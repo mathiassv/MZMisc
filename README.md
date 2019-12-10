@@ -37,6 +37,17 @@ STLString myPath = PathString::RemoveIllegalPathCharacters(MyOtherPath);
 ## AutoHandle.h 
 RAII Class for Windows HANDLE
 
+```cpp
+ {
+  auto file = AutoHandle(::CreateFile(filename.c_str(), GENERIC_READ, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, 0));
+  if (file.isValid())
+  {
+     ::WriteFile(file, byData, len, &bytesWritten, 0);
+  }
+}
+ // file hanlder is auto closed when file goes out of scope
+ 
+```
 ## BoostPrio.h 
 Class for tempoary boost thread priority, and when it destructs it will return thread prio to previous state
 
