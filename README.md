@@ -40,4 +40,12 @@ RAII Class for Windows HANDLE
 ## BoostPrio.h 
 Class for tempoary boost thread priority, and when it destructs it will return thread prio to previous state
 
-
+```cpp
+ {
+  BoostThreadPrio boost;
+    ... to work
+ }
+ // Prio is restored to previous state
+ 
+ 
+```
