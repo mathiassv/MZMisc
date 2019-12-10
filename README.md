@@ -4,29 +4,38 @@ Collection of misc C++ header only helper classes
 ## PathString.h 
 Class for handling file paths
 
-        PathString( <file path> )
-                SamePath(const PathString& otherpath)
-                RemoveTrailingSlashFromPath()
-                GetPathLength()
-                GetPath()
-                GetFileName()
-                GetFileExtension()
-                GetFileNamePart()
-                GetFullFileName()
-                GetDevice(..)
-                GetAbsolutePath(...)
-                static CreateUNCPath(..)
-                static PathIsDirectoryEmptEx2(..)
-                static PathIsQuouted(...)
-                static StripQuotes(...)	
-                static RelativeToAbsolutePath(...)
-                static RemoveIllegalPathCharacters(...)
-                static ReplaceIllegalPathCharacters(...)
+```cpp
+PathString( <file path> )
+SamePath(const PathString& otherpath)
+RemoveTrailingSlashFromPath()
+GetPathLength()
+GetPath()
+GetFileName()
+GetFileExtension()
+GetFileNamePart()
+GetFullFileName()
+GetDevice(..)
+GetAbsolutePath(...)
+static bool CreateUNCPath(..)
+static bool PathIsDirectoryEmptEx2(..)
+static bool PathIsQuouted(...)
+static STLStirng StripQuotes(...)
+static STLStirng RelativeToAbsolutePath(...) 
+static STLStirng RemoveIllegalPathCharacters(...)
+static STLStirng ReplaceIllegalPathCharacters(...)
 
-# AutoHandle.h 
+// Example
+auto ps = PathString(szFilePath);
+auto filename = ps.GetFileNamePart();
+auto absPath = ps.GetAbsolutePath(szRelativePath);
+
+bool success = PathString::GetAbsolutePath(out uncPath, true true);
+```
+
+## AutoHandle.h 
 RAII Class for Windows HANDLE
 
-# BoostPrio.h 
+## BoostPrio.h 
 Class for tempoary boost thread priority, and when it destructs it will return thread prio to previous state
 
 
