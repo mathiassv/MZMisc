@@ -29,7 +29,9 @@ auto ps = PathString(szFilePath);
 auto filename = ps.GetFileNamePart();
 auto absPath = ps.GetAbsolutePath(szRelativePath);
 
-bool success = PathString::GetAbsolutePath(out uncPath, true true);
+bool success = PathString::CreateUNCPath(out uncPath, true true);
+bool isEmpty = PathString::PathIsDirectoryEmptyEx2(myPath);
+STLString myPath = PathString::RemoveIllegalPathCharacters(MyOtherPath);
 ```
 
 ## AutoHandle.h 
